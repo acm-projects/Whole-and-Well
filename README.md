@@ -1,9 +1,8 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/90812886/189551530-4505340d-9b2b-4e6d-ab62-c55c844a40ea.jpg"/>
+<img src="https://user-images.githubusercontent.com/90812886/189551530-4505340d-9b2b-4e6d-ab62-c55c844a40ea.jpg"width =  "400"/>
 </p>
-![images](https://user-images.githubusercontent.com/90812886/189551530-4505340d-9b2b-4e6d-ab62-c55c844a40ea.jpg)
 
-# Whole-and-Well
+# Whole and Well
 Take the anxiety out of wellness with Whole and Well! This mobile app lets you focus on movement that makes you feel good and adds value to your life overall, without focusing specifically on metrics.
 
 # MVP
