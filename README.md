@@ -6,10 +6,15 @@
 Take the anxiety out of wellness with Whole and Well! This mobile app lets you focus on movement that makes you feel good and adds value to your life overall, without focusing specifically on metrics.
 
 # MVP
-- Allow users to track their exercise type (ex. lifting, biking, zumba) without metrics like miles, calories burned, etc
-- Users can track how the exercise made them feel and energy levels post-workout
-- Provide the user with encouraging messages and unconventional metrics
-- Suggest exercise options to the user based on their non-metric goals
+- allow users to create profiles
+- Set and track goals within the app based on mood/feelings surrounding the following items:
+    - Sleep 
+    - Water 
+    - Workouts
+- Use the above factors to calculate a "wellness score" and create a rewards system
+- Daily check-in with the user to assess their goals
+- Provide access to support, such as tips on ED recovery, wellness websites, and personal resources
+- Recommend exercises to participants based on their goals and feelings associated with completed workouts
 
 # Stretch Goals
 - Calendar of workout tracker and associated mood tracker
