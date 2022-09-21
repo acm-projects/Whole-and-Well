@@ -45,39 +45,33 @@ Discuss and finalize tech stack (1st week)
   - [A quick figma tutorial](https://www.youtube.com/watch?v=FTFaQWZBqQ8)
   
 - Frontend
-  - [React Native](https://reactnative.dev)  OR [Flutter](https://flutter.dev)
-  - [React Native Docs](https://reactnative.dev/docs/getting-started)
+  - [Flutter](https://flutter.dev)
   - [Flutter Docs](https://docs.flutter.dev)
 - Backend
   - [Firebase](https://firebase.google.com)
     - [Database](https://firebase.google.com/docs/database)
     - [Authentication](https://firebase.google.com/docs/auth)
-  - [JavaScript](https://www.youtube.com/watch?v=W6NZfCO5SIk) OR [Dart](https://www.youtube.com/watch?v=veMhOYRib9o)
+  - [Dart](https://www.youtube.com/watch?v=veMhOYRib9o)
 
 # Software to Install
-- [React Native](https://reactnative.dev/docs/environment-setup) OR [Flutter](https://docs.flutter.dev/get-started/install)- Cross-platform mobile app development framework
-- JavaScript OR [Dart](https://dart.dev/get-dart)
+- [Flutter](https://docs.flutter.dev/get-started/install)- Cross-platform mobile app development framework
+- [Dart](https://dart.dev/get-dart)
 - [Git](https://git-scm.com/downloads)
 - [Visual Studio Code](https://code.visualstudio.com/download) OR [Android Studio](https://developer.android.com/studio/?gclid=Cj0KCQiAxoiQBhCRARIsAPsvo-xXX5s86oGHEjB2qkbUpziXVTtE7hKYu-75k1RGtP3RvP7XNLb1n4UaAnxGEALw_wcB&gclsrc=aw.ds)
 
-# Tutorials (Java
-- [5 JavaScript Concepts you need to know](https://www.youtube.com/watch?v=a00NRSFgHsY)
+# Tutorials
 - Push Notification tutotials:
-  - [Expo/React Native](https://www.youtube.com/watch?v=jX5axGXJBa4)
   - [Firebase Cloud Messaging and Flutter](https://www.youtube.com/watch?v=2TSm2YGBT1s), [meduim article](https://medium.com/comerge/implementing-push-notifications-in-flutter-apps-aef98451e8f1)
-  - [Firebase Cloud Messaging and React Native](https://medium.com/@anum.amin/react-native-integrating-push-notifications-using-fcm-349fff071591)
-  - [React Native Push Notifs tutorial](https://www.youtube.com/watch?v=C9raKcEvptA), [another article](https://blog.logrocket.com/how-to-create-and-send-push-notifications-in-react-native/)
   - [Firebase for push notifs](https://medium.com/firebase-developers/build-a-transactional-push-notifications-system-using-only-firebase-2b792bb25a60)
  - [Building user profiles example](https://www.youtube.com/watch?v=1hPgQWbWmEk)
  - [General Flutter + Firebase](https://www.youtube.com/watch?v=sfA3NWDBPZ4)
  - [Flutter tutorials playlist](https://youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
- - [React Native Crash Course](https://www.youtube.com/watch?v=Hf4MJH0jDb4)
+ - [Flutter/Dart Practice Project - under 20 mins video](https://www.youtube.com/watch?v=oX9PQI0D-v4)
 
 # Resources
 - Documentation
   - [Dart documentation](https://dart.dev/guides)
   - [Dart Tutorial (1:41:52)](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q)
-  - [JavaScript documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   - [Intro to Flutter (1:45:52)](https://www.youtube.com/watch?v=pTJJsmejUOQ)
  - Github
    - [Helpful GitHub Cheatsheet 1](https://education.github.com/git-cheat-sheet-education.pdf)
