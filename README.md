@@ -21,24 +21,6 @@ Take the anxiety out of wellness with Whole and Well! This mobile app lets you f
 - Create a rewards system for exercise over time associated with high energy levels and positive feelings
 - Provide ranking of user's exercise type, ranked by their feelings toward it
 
-# Milestones
-Discuss and finalize tech stack (1st week)
-- Front-end
-  - Set up and install needed software, watch tutorials on tech stack, complete practice projects. Create wireframes for pages (2 weeks)
-  - Code pages (4 weeks)
-    - Log an exercise - include type, energy levels post-workout, and overall feelings
-    - Allow user to enter goals such as meet new people, etc and then recommend an exercise based on their goals
-    - Tracker of feelings over time with type of exercise
-  - Integrate with Backend (2 weeks)
-  - Presentation preparation and finishing touches (2 weeks)
-- Back-end
-  - Set up and install needed software, watch tutorials on tech stack, complete practice projects (2 weeks)
-  - Add Firestore database and authorization for users and their workouts (2 weeks)
-  - Based on user goals, suggest new activities (1 weeks)
-  - Integrate with front-end (3 weeks)
-  - Presentation preparation and finishing touches (2 weeks)
-
-
 # Tech Stack
 - Wireframing
   - [Figma](https://www.figma.com)
