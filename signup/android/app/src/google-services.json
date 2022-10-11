@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "95825722134",
+    "project_id": "whole-and-well",
+    "storage_bucket": "whole-and-well.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95825722134:android:b7400cb3bbda6ef31bae37",
+        "android_client_info": {
+          "package_name": "com.example.signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95825722134-0vd5mn847aq8dodor5ju41ccm3k0h45d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6vyI_oT5iIPYEcy6GUNLPp7k0TWlAxNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95825722134-0vd5mn847aq8dodor5ju41ccm3k0h45d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
