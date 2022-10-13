@@ -6,10 +6,10 @@
 Take the anxiety out of wellness with Whole and Well! This mobile app lets you focus on movement that makes you feel good and adds value to your life overall, without focusing specifically on metrics.
 
 # MVP
-- allow users to create profiles
+- Allow all users to create profiles
 - Set and track goals within the app based on mood/feelings surrounding the following items:
     - Sleep 
-    - Water 
+    - Waters 
     - Workouts
 - Use the above factors to calculate a "wellness score" and create a rewards system
 - Daily check-in with the user to assess their goals
