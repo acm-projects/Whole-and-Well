@@ -48,8 +48,6 @@ Take the anxiety out of wellness with Whole and Well! This mobile app lets you f
   - [Firebase Authentication - ACM Projects slides, with Java](https://docs.google.com/presentation/d/1dhzx_ZfPq_ScN8seCsVY1GN3LBSUDFfTrYgX5E1TvmE/edit#slide=id.gd5897440e3_0_1750)
   - [Firebase Authorization (article, uses Firebase UI)](https://firebase.google.com/docs/auth/android/firebaseui)
   - [Firebase for push notifs](https://medium.com/firebase-developers/build-a-transactional-push-notifications-system-using-only-firebase-2b792bb25a60)
- - [Building user profiles example](https://www.youtube.com/watch?v=1hPgQWbWmEk)
- - [General Flutter + Firebase](https://www.youtube.com/watch?v=s)
  - [Flutter tutorials playlist](https://youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
  - [Flutter/Dart Practice Project - under 20 mins video](https://www.youtube.com/watch?v=oX9PQI0D-v4)
 
