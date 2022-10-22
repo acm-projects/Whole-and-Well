@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:firebase_core/firebase_core.dart';
 
+void main() async  {
+  WidgetsFlutterBinding.ensureInitialized();
 
-void main() => runApp(const MyApp());
+  await Firebase.initializeApp();
+
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -12,7 +17,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: _title,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: const Color(0xFF656CCA),
+       //   secondary: const Color(0xFFFFC107),
+        ),
+      ),
       home: Scaffold(
         //appBar: AppBar(title: const Text(_title)),
         body: const MyStatefulWidget(),
@@ -38,6 +50,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: <Widget>[
+
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
@@ -66,12 +79,16 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   color: Color(0xFF656CCA),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                 child: TextField(
                   controller: nameController,
+                  style: TextStyle(color: Colors.white),
                   decoration: const InputDecoration(
                     //   border: OutlineInputBorder(),
                     labelText: 'User Name',
+                    labelStyle: TextStyle(
+                      color: Colors.white, //<-- SEE HERE
+                    ),
                   ),
                 ),
               ),
@@ -86,13 +103,17 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   color: Color(0xFF656CCA),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                //padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                //padding: const EdgeInsets.all(10),
                 child: TextField(
                   controller: passwordController,
+                  style: TextStyle(color: Colors.white),
                   decoration: const InputDecoration(
                     //   border: OutlineInputBorder(),
                     labelText: 'Password',
+                    labelStyle: TextStyle(
+                      color: Colors.white, //<-- SEE HERE
+                    ),
                   ),
                 ),
               ),
@@ -107,20 +128,21 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
             Padding(
               padding: const EdgeInsets.all(10),
-              Container(
+              child: Container(
+   //   Container(
                   height: 43,
                   decoration: BoxDecoration(
                     color: Color(0xFF656CCA),
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  padding: const EdgeInsets.all(10),
+              //    padding: const EdgeInsets.all(10),
                   child: ElevatedButton(
                     child: const Text('Login'),
                     onPressed: () {
                       print(nameController.text);
                       print(passwordController.text);
                     },
-                  )
+                  ),
               ),
             ),
             Row(
