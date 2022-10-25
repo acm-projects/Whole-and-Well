@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async  {
-  WidgetsFlutterBinding.ensureInitialized(); // whta gtgoos]
+  WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(); // hola
 
   runApp(const MyApp());
 }
