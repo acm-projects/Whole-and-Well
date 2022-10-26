@@ -10,65 +10,41 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+
         children: <Widget>[
         Container(
-          //padding: EdgeInsets.all(20.0),
-
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-                fixedSize: const Size(200, 200),
+                fixedSize: const Size(250, 250),
                 shape: const CircleBorder(),
                 backgroundColor:Colors.deepPurpleAccent,
             ),
 
-            onPressed: () {},
+            onPressed: () {
+              //MaterialApp.router() route this to the next page in workout
+            },
             child: const Text(
-              "START \n WORKOUT",
+              "BEGIN \n WORKOUT",
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 24),
+              style: TextStyle(fontSize: 30),
             ),
       ),
         ),
 
-          Row( //designing nav bar using a row
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children:<Widget>[
-                Container(
-                  child: IconButton(
-                    onPressed:(){},
-                    icon:Icon(Icons.mail),
-                  )
-                ),
-                Container(
-                    child: IconButton(
-                      onPressed:(){},
-                      icon:Icon(Icons.mail),
-                    )
-                ),
-                Container(
-                    child: IconButton(
-                      onPressed:(){},
-                      icon:Icon(Icons.mail),
-                    )
-                ),
-                Container(
-                    child: IconButton(
-                      onPressed:(){},
-                      icon:Icon(Icons.mail),
-                    )
-                ),
-              ]
 
-
+          Container(
+            margin: const EdgeInsets.all(30.0),
+            child: const SizedBox(
+              width: 300,
+              height: 300,
+              child: ColoredBox(color: Colors.black),
+    ),
           ),
-
+              ],
+          ),
           //ElevatedButton(onPressed: onPressed(){}, child: Text("test")),
-    ],
-
-    ), //column
     );
   }
 }

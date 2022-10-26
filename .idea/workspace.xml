@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4295fac0-18ba-4b5b-a7b3-bfc4b97058b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/signup/lib/navbar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup/lib/workout1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup/lib/workout2.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup/lib/workout3.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Whole_and_Well.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Whole_and_Well.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup/lib/workout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/workout.dart" afterDir="false" />
