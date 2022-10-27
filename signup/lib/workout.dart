@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'workout1.dart';
 
 void main() => runApp(MaterialApp(
-    home: Home(),
+  debugShowCheckedModeBanner: false,
+    home: Workout(),
 ),
 );
 
-class Home extends StatelessWidget {
+class Workout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -23,6 +26,9 @@ class Home extends StatelessWidget {
             ),
 
             onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Workout1())
+              );
               //MaterialApp.router() route this to the next page in workout
             },
             child: const Text(

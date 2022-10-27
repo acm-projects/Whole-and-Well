@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4295fac0-18ba-4b5b-a7b3-bfc4b97058b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/signup/lib/navbar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signup/lib/workout1.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signup/lib/workout2.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signup/lib/workout3.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Whole-and-Well.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Whole-and-Well.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Whole_and_Well.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Whole_and_Well.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup/lib/workout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/workout.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/workout1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/workout1.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/workout2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/workout2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/workout3.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/workout3.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/signup/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/signup/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2GbiVa1Wpb7Ki4nPqbKtleniqnU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,10 +54,10 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

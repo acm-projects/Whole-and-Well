@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Whole and Well" type="FlutterRunConfigurationType" factoryName="Flutter">
-    <option name="filePath" value="$PROJECT_DIR$/signup/lib/main.dart" />
+    <option name="filePath" value="$PROJECT_DIR$/signup/lib/workout2.dart" />
     <method v="2" />
   </configuration>
 </component>

@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Home(),
+    debugShowCheckedModeBanner: false,
+    home: Workout3(),
   ),
-  );cd 
+  );
 }
 
-class Home extends StatelessWidget {
+class Workout3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
 
       body:
-      //color: Colors.deepPurpleAccent,
       Container(
         color: Colors.deepPurple,
         child: Column(

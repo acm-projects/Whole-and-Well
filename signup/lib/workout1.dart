@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'workout2.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Home(),
+    debugShowCheckedModeBanner: false,
+    home: Workout1(),
   ),
   );
 }
 
-class Home extends StatelessWidget {
+class Workout1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
@@ -43,7 +45,10 @@ class Home extends StatelessWidget {
              height:85.0,
 
              child: ElevatedButton(
-               onPressed: (){},
+             onPressed: () {
+    Navigator.push(context,
+    MaterialPageRoute(builder: (context) => Workout2())
+    );},
                  //color: Colors.white,
                   child:const Text(
                     "DONE",
