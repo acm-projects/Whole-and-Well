@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'workout.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -45,7 +46,11 @@ class Workout3 extends StatelessWidget {
               height:85.0,
 
               child: ElevatedButton(
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Workout())
+                  );
+                },
                 //color: Colors.white,
                 child:const Text(
                   "DONE",

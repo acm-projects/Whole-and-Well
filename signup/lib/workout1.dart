@@ -46,9 +46,9 @@ class Workout1 extends StatelessWidget {
 
              child: ElevatedButton(
              onPressed: () {
-    Navigator.push(context,
+    /*Navigator.push(context,
     MaterialPageRoute(builder: (context) => Workout2())
-    );},
+    );*/},
                  //color: Colors.white,
                   child:const Text(
                     "DONE",
