@@ -193,11 +193,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      return MaterialApp(
+        debugShowCheckedModeBanner: false,
      // home: MainPage(),
       home: NotesPage(),
       theme: ThemeData(primarySwatch: Colors.deepPurple),
     );
   }
 }
+
+//initial state = main page --> routes to home with nav bar and changing screens

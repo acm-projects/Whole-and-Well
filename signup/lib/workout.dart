@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'workout1.dart';
+import 'notes.dart';
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
@@ -39,15 +40,23 @@ class Workout extends StatelessWidget {
       ),
         ),
 
-
+//route a new button to the notes page -->
           Container(
-            margin: const EdgeInsets.all(30.0),
+            /*margin: const EdgeInsets.all(30.0),
             child: const SizedBox(
-              width: 300,
-              height: 300,
-              child: ColoredBox(color: Colors.black),
+                width: 300,
+                height: 300,
+                child: ColoredBox(color: Colors.black),*/
+            child: ElevatedButton(onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => NotesPage())
+              );
+
+    }, child: Text("Create Journal Entry!"),
+
+    )
+
     ),
-          ),
               ],
           ),
           //ElevatedButton(onPressed: onPressed(){}, child: Text("test")),

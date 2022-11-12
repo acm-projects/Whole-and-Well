@@ -5,6 +5,15 @@ import 'package:signup/login_page.dart';
 
 import 'home_page.dart';
 
+
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: MainPage(),
+  ),
+  );
+}
+
 class MainPage extends StatelessWidget {
   const MainPage({ Key? key}) : super(key: key);
 

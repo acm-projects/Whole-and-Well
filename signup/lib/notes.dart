@@ -4,6 +4,15 @@ import 'package:signup/database.dart';
 import 'package:signup/dialog_box.dart';
 import 'journal_tile.dart';
 
+
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: NotesPage(),
+  ),
+  );
+}
+
 class NotesPage extends StatefulWidget {
   const NotesPage({Key? key}) : super(key: key);
 

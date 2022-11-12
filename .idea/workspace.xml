@@ -10,9 +10,14 @@
     <list default="true" id="4295fac0-18ba-4b5b-a7b3-bfc4b97058b6" name="Changes" comment="&quot;10/26&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Whole_and_Well.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Whole_and_Well.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/lib/workout2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/workout2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/main_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/navbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/navbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/notes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/notes.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/workout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/workout.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/lib/workout1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/workout1.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup/lib/workout2test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/signup/lib/workout2test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/signup/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
