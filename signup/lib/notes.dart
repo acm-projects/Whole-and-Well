@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:signup/database.dart';
 import 'package:signup/dialog_box.dart';
-import 'package:signup/workout.dart';
+//import 'package:signup/workout.dart';
 import 'journal_tile.dart';
-import 'main.dart';
+//import 'main.dart';
 import 'package:hive/hive.dart';
 
 /*
@@ -26,11 +26,7 @@ void main() async  {
 
   var box = await Hive.openBox('mybox');
 
-  runApp(const MyApp());
-}
-
-
-void main() {
+ // runApp(const MyApp());
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: NotesPage(),

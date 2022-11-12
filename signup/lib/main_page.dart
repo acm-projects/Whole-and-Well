@@ -4,29 +4,18 @@ import 'package:flutter/material.dart';
 import 'package:signup/auth_page.dart';
 import 'package:signup/login_page.dart';
 import 'home_page.dart';
-//import 'main.dart';
+import 'main.dart';
 
-
-void main() async  {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
- // runApp(const MyApp());
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: MainPage(),
-  ),
-  );
-}
-
-
-
-
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: MainPage(),
-  ),
+  // runApp(const MyApp());
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MainPage(),
+    ),
   );
 }
 
@@ -40,7 +29,8 @@ class MainPage extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot){
           if (snapshot.hasData){
-            return HomePage();
+           // return HomePage();
+            return MyApp();
           } else {
             return AuthPage();
           }

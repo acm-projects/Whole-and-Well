@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'workout1.dart';
 import 'notes.dart';
 
-void main() => runApp(MaterialApp(
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+ // await Firebase.initializeApp();
+
+  await Hive.initFlutter();
+
+  var box = await Hive.openBox('mybox');
+runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
     home: Workout(),
 ),
 );
+}
+
+
 
 class Workout extends StatelessWidget {
   @override
