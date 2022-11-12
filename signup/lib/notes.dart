@@ -1,8 +1,33 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:signup/database.dart';
 import 'package:signup/dialog_box.dart';
+import 'package:signup/workout.dart';
 import 'journal_tile.dart';
+import 'main.dart';
+import 'package:hive/hive.dart';
+
+/*
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: NotesPage(),
+  ),
+  );
+}
+*/
+
+void main() async  {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
+  await Hive.initFlutter();
+
+  var box = await Hive.openBox('mybox');
+
+  runApp(const MyApp());
+}
 
 
 void main() {
@@ -88,8 +113,8 @@ class _NotesPageState extends State<NotesPage> {
         itemBuilder: (context, index) {
           return JournalTile(
             taskName: db.journalList[index][0],
-            taskCompleted: db.journalList[index][1],
-            onChanged: (value) => checkBoxChanged(value, index),
+        //    taskCompleted: db.journalList[index][1],
+        //    onChanged: (value) => checkBoxChanged(value, index),
             deleteFunction: (context) => deleteTask(index),
           );
         },

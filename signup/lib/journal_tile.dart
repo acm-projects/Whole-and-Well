@@ -3,15 +3,15 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 
 class JournalTile extends StatelessWidget {
   final String taskName;
-  final bool taskCompleted;
-  Function(bool?)? onChanged;
+ // final bool taskCompleted;
+ // Function(bool?)? onChanged;
   Function(BuildContext)? deleteFunction;
 
   JournalTile({
     super.key,
     required this.taskName,
-    required this.taskCompleted,
-    required this.onChanged,
+ //   required this.taskCompleted,
+  //  required this.onChanged,
     required this.deleteFunction,
   });
 
@@ -39,19 +39,19 @@ class JournalTile extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Checkbox(
+           /*   Checkbox(
                 value: taskCompleted,
                 onChanged: onChanged,
                 activeColor: Colors.black,
-              ),
+              ),*/
 
               Text(
                 taskName,
-                style: TextStyle(
+                /*style: TextStyle(
                   decoration: taskCompleted
                       ? TextDecoration.lineThrough
                       : TextDecoration.none,
-                ),
+                ),*/
               ),
             ],
           ),
