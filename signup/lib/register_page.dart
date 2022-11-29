@@ -1,3 +1,4 @@
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -13,9 +14,9 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
-  TextEditingController nameController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
-  TextEditingController confirmPasswordController = TextEditingController();
+  final nameController = TextEditingController();
+  final passwordController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
 
   @override
   void dispose() {
@@ -26,10 +27,21 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 
   Future signUp() async {
-    await FirebaseAuth.instance.createUserWithEmailAndPassword(
+    if(passwordConfirmed()) {
+      await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: nameController.text.trim(),
         password: passwordController.text.trim(),
-    );
+      );
+    }
+  }
+
+  bool passwordConfirmed(){
+    if(passwordController.text.trim() ==
+        confirmPasswordController.text.trim()){
+      return true;
+    } else {
+      return false;
+    }
   }
 
   @override
@@ -154,6 +166,9 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                   //    padding: const EdgeInsets.all(10),
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:Colors.deepPurple[700],
+                    ),
                     child: const Text('Sign Up'),
                     onPressed: () {
                       print(nameController.text);
@@ -171,7 +186,10 @@ class _RegisterPageState extends State<RegisterPage> {
                     onTap: widget.showLoginPage,
                     child: const Text(
                       'Login now',
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(
+                          fontSize: 20,
+                        color: Colors.deepPurple,
+                      ),
                     ),
                   ),
                   onPressed: () {
@@ -185,3 +203,5 @@ class _RegisterPageState extends State<RegisterPage> {
         ));
   }
 }
+
+

@@ -24,7 +24,8 @@ void main() async  {
 
   await Hive.initFlutter();
 
-  var box = await Hive.openBox('mybox');
+  dynamic box = await Hive.openBox('mybox');
+ // await Hive.openBox('mybox');
 
  // runApp(const MyApp());
   runApp(MaterialApp(
@@ -95,21 +96,27 @@ class _NotesPageState extends State<NotesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple,
+     backgroundColor: Colors.white,
+   // backgroundColor: Colors.deepPurple,
       appBar: AppBar(
+        centerTitle: true,
         title: Text('Journal'),
+        backgroundColor: Color(0xFF4C4595),
         elevation: 0,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNewTask,
+        backgroundColor: Color(0xFF4C4595),
         child: Icon(Icons.add),
       ),
       body: ListView.builder(
         itemCount: db.journalList.length,
         itemBuilder: (context, index) {
           return JournalTile(
-            taskName: db.journalList[index][0],
-        //    taskCompleted: db.journalList[index][1],
+        //    taskName: db.journalList[index][0],
+                taskName: db.journalList[index][0],
+
+            //    taskCompleted: db.journalList[index][1],
         //    onChanged: (value) => checkBoxChanged(value, index),
             deleteFunction: (context) => deleteTask(index),
           );

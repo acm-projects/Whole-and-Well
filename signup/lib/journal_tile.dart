@@ -35,23 +35,17 @@ class JournalTile extends StatelessWidget {
           padding: EdgeInsets.all(24),
           decoration: BoxDecoration(
             color: Colors.deepPurpleAccent,
+          //  color: Color(0xFF9395D3),
+
             borderRadius: BorderRadius.circular(12),
           ),
           child: Row(
             children: [
-           /*   Checkbox(
-                value: taskCompleted,
-                onChanged: onChanged,
-                activeColor: Colors.black,
-              ),*/
-
-              Text(
-                taskName,
-                /*style: TextStyle(
-                  decoration: taskCompleted
-                      ? TextDecoration.lineThrough
-                      : TextDecoration.none,
-                ),*/
+              Expanded(
+                child: Text(
+                    taskName,
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
             ],
           ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'workout.dart';
+import 'main.dart';
+import 'globalvar.dart' as globals;
 
 void main() {
   runApp(MaterialApp(
@@ -17,7 +19,7 @@ class Workout3 extends StatelessWidget {
 
       body:
       Container(
-        color: Colors.deepPurple,
+        color: const Color(0xFF656CCA),
         child: Column(
 
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -31,38 +33,40 @@ class Workout3 extends StatelessWidget {
                 style: (
 
                     //add text color here,
-                    TextStyle(fontSize: 25, color:Colors.white, fontWeight: FontWeight.bold )
+                    TextStyle(fontSize: 32.0, color:Colors.white, fontWeight: FontWeight.bold )
                 ),//style end
               ),
             ),
-            Container(
-                child: MyStatefulWidget(
-
-                )
+            Padding(
+              padding: const EdgeInsets.all(50.0),
+              child: MyStatefulWidget(
+              ),
             ),
-
-            SizedBox(
-              width: 200.0,
+            Container(
+              width: 292.0,
               height:85.0,
-
               child: ElevatedButton(
-                onPressed: (){
+                onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Workout())
-                  );
-                },
-                //color: Colors.white,
+                      MaterialPageRoute(builder: (context) => navBar())
+                  );},
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFFFFFFF)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius:BorderRadius.circular(30.0),
+                    ),
+                  ),//shape
+                ),
+                //style: ElevatedButton.styleFrom(backgroundColor:Colors.white),
                 child:const Text(
                   "DONE",
                   style: (
-                      TextStyle(fontSize: 40, color:Colors.black)
+                      TextStyle(fontSize: 40, color:Colors.black, fontWeight:FontWeight.bold)
                   ),
                 ),
-                style: ElevatedButton.styleFrom(backgroundColor:Colors.white),
               ),
             ),
-
-
           ],
         ),
       ), //column
@@ -78,21 +82,20 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  double _currentSliderValue = 0;
-
+  //double _currentSliderValue = 0;
   @override
   Widget build(BuildContext context) {
     return Slider(
-      value: _currentSliderValue,
+      value: globals.finalSliderValue,
       min:0,
       max: 100,
       divisions: 5,
       activeColor: Colors.white,
       inactiveColor: Colors.white,
-      label: _currentSliderValue.round().toString(),
+      label: globals.finalSliderValue.round().toString(),
       onChanged: (double value) {
         setState(() {
-          _currentSliderValue = value;
+          globals.finalSliderValue = value;
         });
       },
     );

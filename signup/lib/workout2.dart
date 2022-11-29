@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'workout3.dart';
-import 'dart:math';
 
-int i = 0;
 dynamic response ="{'key1': 'value', 'key2': 'value'}";
 dynamic quote ="You are doing great! Keep going!";
 
@@ -34,19 +32,21 @@ class Workout2State extends State<Workout2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body:
       Container(
         width: MediaQuery.of(context).size.width,
-        color: Colors.deepPurple,
+        color: Color(0xFF656CCA),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
 
           children: <Widget>[
-            Text(quote ?? '', textAlign: TextAlign.center, style: const TextStyle(fontSize: 20,color: Colors.white)),
-            SizedBox(
-              width: 200.0,
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Text(quote ?? '', textAlign: TextAlign.center, style: const TextStyle(fontSize: 30.0,color: Colors.white)),
+            ),
+            Container(
+              width: 292.0,
               height:85.0,
               child: ElevatedButton(
                 onPressed: () {
@@ -56,12 +56,19 @@ class Workout2State extends State<Workout2> {
                 }, //color: Colors.white,
                 child:const Text(
                   textAlign:TextAlign.center,
-                  "END\nWORKOUT",
+                  "END WORKOUT",
                   style: (
-                      TextStyle(fontSize: 20, color:Colors.black)
+                      TextStyle(fontSize: 32, color:Colors.black, fontWeight:FontWeight.bold)
                   ),
                 ),
-                style: ElevatedButton.styleFrom(backgroundColor:Colors.red),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFF05050)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius:BorderRadius.circular(40.0),
+                    ),
+                  ),//shape
+                ),
               ),
             ),
           ],
@@ -85,10 +92,4 @@ Future getQuote() async{
     quote = "null";
   }
   return quote;
-  //Quote quote = response.body;
 }
-
-
-
-
-

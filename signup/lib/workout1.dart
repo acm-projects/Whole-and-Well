@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'workout2.dart';
+import 'globalvar.dart' as globals;
 
 void main() {
   runApp(MaterialApp(
@@ -18,7 +19,7 @@ class Workout1 extends StatelessWidget {
       body:
       //color: Colors.deepPurpleAccent,
       Container(
-        color: Colors.deepPurple,
+        color: Color(0xFF656CCA),
         child: Column(
 
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -31,36 +32,42 @@ class Workout1 extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: (
 
-                //add text color here,
-                TextStyle(fontSize: 25, color:Colors.white, fontWeight: FontWeight.bold )
+                    //add text color here,
+                    TextStyle(fontSize: 32, color:Colors.white, fontWeight: FontWeight.bold )
                 ),//style end
               ),
-              ),
-           Container(
-             child: MyStatefulWidget()
-           ),
+            ),
+            Padding(
+                padding: const EdgeInsets.all(50.0),
+                child: MyStatefulWidget()
+            ),
 
-           SizedBox(
-             width: 200.0,
-             height:85.0,
+            Container(
+              width: 292.0,
+              height:85.0,
 
-             child: ElevatedButton(
-             onPressed: () {
-    Navigator.push(context,
-    MaterialPageRoute(builder: (context) => Workout2())
-    );},
-                 //color: Colors.white,
-                  child:const Text(
-                    "DONE",
-               style: (
-                 TextStyle(fontSize: 40, color:Colors.black)
-               ),
-             ),
-               style: ElevatedButton.styleFrom(backgroundColor:Colors.white),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Workout2())
+                  );},
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFFFFFFF)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius:BorderRadius.circular(30.0),
+                    ),
+                  ),//shape
                 ),
-           ),
-
-
+                //style: ElevatedButton.styleFrom(backgroundColor:Colors.white),
+                child:const Text(
+                  "DONE",
+                  style: (
+                      TextStyle(fontSize: 40, color:Colors.black, fontWeight:FontWeight.bold)
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ), //column
@@ -76,21 +83,20 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  double _currentSliderValue = 0;
-
+  //globals._currentSliderValue = 0;
   @override
   Widget build(BuildContext context) {
     return Slider(
-      value: _currentSliderValue,
+      value: globals.currentSliderValue,
       min:0,
       max: 100,
       divisions: 5,
       activeColor: Colors.white,
       inactiveColor: Colors.white,
-      label: _currentSliderValue.round().toString(),
+      label: globals.currentSliderValue.round().toString(),
       onChanged: (double value) {
         setState(() {
-          _currentSliderValue = value;
+          globals.currentSliderValue = value;
         });
       },
     );

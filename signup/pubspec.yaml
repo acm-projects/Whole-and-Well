@@ -34,6 +34,9 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   http: 0.13.5
+  url_launcher: ^6.0.17
+  syncfusion_flutter_charts: ^19.1.54
+  cloud_firestore: ^4.1.0
   json_annotation:
 
 
@@ -46,6 +49,7 @@ dependencies:
   google_fonts: ^3.0.1
   sqflite: ^2.2.0+3
   flutter_slidable: ^2.0.0
+  percent_indicator: ^3.4.0
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +74,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/logofinal.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

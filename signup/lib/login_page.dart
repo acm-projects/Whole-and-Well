@@ -1,6 +1,12 @@
+
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:signup/main.dart';
+import 'package:signup/navbar.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback showRegisterPage;
@@ -34,7 +40,10 @@ class _LoginPageState extends State<LoginPage> {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: <Widget>[
-
+      /*      Container(
+              child: new Image.asset('assets/logofinal.png'),
+              alignment: Alignment.center,
+            ),*/
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
@@ -54,7 +63,8 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(
                       color: Color(0xFF224957),
                       fontSize: 20),
-                )),
+                ),
+            ),
             Padding(
               padding: const EdgeInsets.all(10),
               child: Container(
@@ -75,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
-              ),
+              ), 
             ),
 
             Padding(
@@ -108,7 +118,10 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {
                 //forgot password screen
               },
-              child: const Text('Forgot Password',),
+              child: const Text(
+                'Forgot Password',
+                style: TextStyle(color: Color(0xFF656CCA)),
+              ),
             ),
 
             Padding(
@@ -124,10 +137,16 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   //    padding: const EdgeInsets.all(10),
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:Colors.deepPurple[700],
+                    ),
                     child: const Text('Login'),
                     onPressed: () {
                       print(nameController.text);
                       print(passwordController.text);
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => navBar())
+                      );
                     },
                   ),
                 ),
@@ -141,7 +160,7 @@ class _LoginPageState extends State<LoginPage> {
                     onTap: widget.showRegisterPage,
                     child: const Text(
                       'Register now',
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(fontSize: 20, color: Color(0xFF656CCA)),
                     ),
                   ),
                   onPressed: () {
@@ -155,3 +174,155 @@ class _LoginPageState extends State<LoginPage> {
         ));
   }
 }
+
+
+/*
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+
+  Future signIn() async {
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: _emailController.text.trim(),
+        password: _passwordController.text.trim(),
+    );
+  }
+
+  @override
+  void dispose() {
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.purple,
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Icon(
+                Icons.android,
+                size: 100,
+              ),
+              SizedBox(height: 75),
+              Text(
+                'Hello Again!',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 36,
+                ),
+              ),
+              SizedBox(height: 10),
+              Text(
+                'Welcome back!',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
+              SizedBox(height: 50),
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: TextField(
+                  controller: _emailController,
+                  decoration: InputDecoration(
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.deepPurple),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    hintText: 'Email',
+                    fillColor: Colors.grey[200],
+                    filled: true,
+                  ),
+                ),
+              ),
+              SizedBox(height: 10),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                    child: TextField(
+                      controller: _passwordController,
+                      decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.deepPurple),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        hintText: 'Password',
+                        fillColor: Colors.grey[200],
+                        filled: true,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10),
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: GestureDetector(
+                  onTap: signIn,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.deepPurple,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Center(
+                        child: Text(
+                      'Sign In',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    )),
+                  ),
+                ),
+              ),
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Not a member?',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    'Register Now',
+                    style: TextStyle(
+                      color: Colors.deepPurple,
+                    ),
+                  ),
+                ],
+              )
+            ]),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+ */
